@@ -1,0 +1,140 @@
+/* === ESTILOS GENERALES === */
+body {
+  font-family: Arial, sans-serif;
+  margin: 25px;
+  background-color: #f3f3f3;
+  color: #222;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+form {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+}
+
+legend {
+  font-weight: bold;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.botones {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #3498db;
+  color: white;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+button.gris {
+  background: #7f8c8d;
+}
+
+#resultado {
+  background: #ecf0f1;
+  border-radius: 6px;
+  padding: 10px;
+  margin: 15px 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* === LISTA DE REGISTROS === */
+#lista {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+}
+
+.registro {
+  background: white;
+  border: 1px solid #ddd;
+  border-left: 6px solid #3498db;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.registro:hover {
+  transform: translateY(-3px);
+}
+
+.registro div {
+  margin: 4px 0;
+}
+
+.registro strong {
+  color: #2c3e50;
+}
+
+.acciones {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.btn-tarde {
+  background: #f39c12;
+}
+
+.btn-eliminar {
+  background: #e74c3c;
+}
+
+footer {
+  text-align: center;
+  color: #777;
+  margin-top: 20px;
+  font-size: 0.9em;
+}
+.btn-eliminar {
+  background: #e74c3c;
+}
+
+.registro[style*="background: #fef5e7"] {
+  border-left-color: #f39c12;
+}
